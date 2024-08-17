@@ -88,7 +88,7 @@ const privkeys = "$privkeys".split(',').map(key => key.trim());
                 console.error(chalk.red('Transaction failed:'), error);
             }
             console.log("");
-            const randomDelay = Math.floor(Math.random() * 3) + 1;
+            const randomDelay = Math.floor(Math.random() * 5) + 1; // 1초에서 5초 사이로 변경
             await new Promise(resolve => setTimeout(resolve, randomDelay * 1000));
         }
     }
